@@ -38,6 +38,7 @@ export const getStaticProps = (async (context) => {
             contact: data
         },
     }
+
 }) satisfies GetStaticProps<{
     contact: ContactInfoType
 }>

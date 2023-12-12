@@ -21,6 +21,7 @@ export const getStaticPaths = (async () => {
     }
 }) satisfies GetStaticPaths
 
+
 export const getStaticProps = (async (context) => {
 
     const response = await axios<ContactInfoType>(`https://jsonplaceholder.typicode.com/users/${context.params ? context.params.id : 1}`)

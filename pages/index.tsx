@@ -15,6 +15,7 @@ const HomeStyle = styled.div`
   flex-direction: column;
 `
 export const getStaticProps = (async () => {
+    try{
         const response = await axios<SocialsType[]>(`${process.env.API_HOST}/socials`);
         const data: SocialsType[] = response.data
 
@@ -31,7 +32,13 @@ export const getStaticProps = (async () => {
                 socials: data
             },
         }
-
+    } catch {
+        return {
+            props: {
+                socials: undefined
+            },
+        }
+    }
 }) satisfies GetStaticProps;
 const Home: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({socials}) => {
   return (

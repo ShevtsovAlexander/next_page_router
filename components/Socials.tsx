@@ -17,7 +17,7 @@ const SocialsStyle = styled.ul`
 `
 
 
-const Socials = ({socials, ...props}: {socials: SocialsType[]}) => {
+const Socials = ({socials, ...props}: {socials?: SocialsType[]}) => {
 
   if (!socials) {
     return null;

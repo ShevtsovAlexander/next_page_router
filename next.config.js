@@ -6,6 +6,7 @@ module.exports = {
     // Enables the styled-components SWC transform
     styledComponents: true
   },
+  output: 'export',
   images: {
     unoptimized: true,
   },

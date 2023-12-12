@@ -6,7 +6,9 @@ module.exports = {
     // Enables the styled-components SWC transform
     styledComponents: true
   },
-  basePath: '/github-pages',
+  images: {
+    unoptimized: true,
+  },
 }
 
 

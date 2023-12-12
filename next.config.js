@@ -10,6 +10,7 @@ module.exports = {
   images: {
     unoptimized: true,
   },
+  basePath: '/next_page_router'
 }
 
 

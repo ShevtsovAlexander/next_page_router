@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import Head from "next/head";
 import axios from "axios";
 import {PostInfoType} from "../../type/type";
-import {GetStaticProps, InferGetStaticPropsType} from "next";
+import {GetStaticPaths, GetStaticProps, InferGetStaticPropsType} from "next";
 import PostInfo from "../../components/PostInfo";
 
 
@@ -21,7 +21,7 @@ export const getStaticPaths = (async () => {
        paths,
        fallback: false,
     }
-})
+}) satisfies GetStaticPaths
 
 export const getStaticProps = (async (context) => {
 

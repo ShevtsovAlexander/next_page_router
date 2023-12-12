@@ -2,9 +2,6 @@ import Head from 'next/head'
 import Heading from "../components/Heading";
 import React, {FC} from "react";
 import styled from "styled-components";
-import axios from "axios";
-import { SocialsType} from "../type/type";
-import {GetStaticProps, InferGetStaticPropsType} from "next";
 import Socials from "../components/Socials";
 
 const HomeStyle = styled.div`

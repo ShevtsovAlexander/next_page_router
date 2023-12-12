@@ -7,6 +7,9 @@ module.exports = {
     styledComponents: true
   },
   basePath: '/github-pages',
+  images: {
+    unoptimized: true
+  }
 }
 
 

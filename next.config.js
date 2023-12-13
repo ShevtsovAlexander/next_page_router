@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
 
+
+
 module.exports = {
+  basePath: "/next_page_router",
   reactStrictMode: true,
   compiler: {
-    // Enables the styled-components SWC transform
     styledComponents: true
   },
+  output: 'export',
   images: {
     unoptimized: true,
   },
